@@ -3,7 +3,7 @@ const { pc1_32,
 	init_perm_32, init_perm_64, init_perm_128, inv_perm_32,
 	inv_perm_64, inv_perm_128, exp_table_128, exp_table_32,
 	exp_table_64, s_boxes_32, s_boxes_64, s_boxes_128,
-	perm_tab_128, perm_tab_32, perm_tab_64 } =await import("./data");
+	perm_tab_128, perm_tab_32, perm_tab_64 } = import("./data");
 
 // FUNCTION TO PERFORM CIRCULAR LEFT SHIFT BY 1
 const shift_left_once = (key_chunk, num) => 
